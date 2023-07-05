@@ -4,9 +4,9 @@ function copy(){
         if(!document.getElementById("th"+i)){
             break;
         }
-        text += document.getElementById("th"+i).textContent+document.getElementById("se"+i).value+"\n";
+        if(document.getElementById("se"+i).value !== "0"){
+            text += document.getElementById("th"+i).textContent+document.getElementById("se"+i).value+"\n";
+        }
     }
-    console.log(text);
-    document.querySelector(text)
-    document.execCommand('copy');
+    document.location.href = "https://social-plugins.line.me/lineit/share?url="+text;
 }
