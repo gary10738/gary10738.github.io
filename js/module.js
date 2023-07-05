@@ -5,7 +5,7 @@ function copy(){
             break;
         }
         if(document.getElementById("se"+i).value !== "0"){
-            text += document.getElementById("th"+i).textContent+document.getElementById("se"+i).value+"\n";
+            text += document.getElementById("th"+i).textContent+document.getElementById("se"+i).value+"\r";
         }
     }
     document.location.href = "https://social-plugins.line.me/lineit/share?url="+text;
